@@ -25,7 +25,10 @@
                         <ul>
                             <a href="#home">Home</a>
                             <a href="#about">About</a>
-                            <a> Contact </a>
+                            <a href="#projects">Projects</a>
+                            <a href="#portfolio">Photography</a>
+                            <a href="#more">Skills</a>
+                            <a href="#contact">Contact</a>
                         </ul>
                     </div>
                 </div>
@@ -40,7 +43,7 @@
                     <h1>Ethan.</h1>
                     <p class="home-intro">Based in Singapore, I am a Data Science and Economics undergraduate student, an amateur programmer and a street photographer. </p>
                     <a class="scroll-button-wrapper" href="#about">
-                        <div class="home-scroll"> scroll to see more.</div>
+                        <div class="scroll"> scroll to see more.</div>
                         <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
                     </a>
                 </div>
@@ -53,6 +56,11 @@
                 <div class="left-about">
                     <h1>About Me</h1>
                     <p class="about-para"></p>
+                    <a class="scroll-button-wrapper" href="#projects">
+                        <div class="scroll"> see my projects.</div>
+                        <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                    </a>
+                    
                 </div>
                 <div class="right-about">
                     <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -67,13 +75,95 @@
                         nibh. Morbi blandit feugiat odio, ac interdum ipsum fringilla a. In egestas vel elit sed blandit. Mauris 
                         vulputate ipsum id nisl sollicitudin accumsan. Curabitur pulvinar varius urna, vel ullamcorper tortor 
                         semper sed. Nullam pellentesque sit amet justo non luctus.</p>
+                    <div class="resume link">
+                        <a class="scroll-button-wrapper" href="">
+                            <div class="scroll"> Get my resume. </div>
+                            <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                        </a>
+                    </div>
                 </div>
             </div>
         </div> <!---short statement, link resume, link to portfolio section and projects section-->
-        <div class="projects-section"></div> <!--academic projects, relevant skills-->
-        <div class="photography-section"></div> <!--photography portfolio, ig link-->
-        <div class="more-section"></div> <!--other skills and interests eg. CAPT, diving, judo, -->
-        <div class="contact-section"></div>  <!--email box, linkedin, github?, ig-->
+        <div id="projects" class="projects-section">
+            <div class="container projects-container">
+                <div class="project1">
+                    <h1>My Projects</h1>
+                    <p class="project-para"></p>
+                    <a class="scroll-button-wrapper" href="#portfolio">
+                        <div class="scroll"> see some photos.</div>
+                        <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                    </a>
+                </div>
+                <div class="project2">
+                    <p class="project-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam leo dolor, egestas nec dolor sed, varius tincidunt metus. Pellentesque habitant 
+                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dolor magna, molestie 
+                        quis turpis sit amet, blandit ullamcorper nulla. Quisque ut ligula interdum, vulputate risus tempor, 
+                        condimentum ante. Duis posuere maximus faucibus. Sed laoreet tempor diam. Interdum et malesuada fames 
+                        ac ante ipsum primis in faucibus. <br><br>
+                </div>
+            </div>
+        </div> <!--academic projects, relevant skills-->
+        <div id="portfolio" class="photography-section">
+            <div class="container portfolio-container">
+                <div class="portfolio1">
+                    <h1>Photography Portfolio</h1>
+                    <p class="portfolio-para"></p>
+                    <a class="scroll-button-wrapper" href="#more">
+                        <div class="scroll"> more about me...</div>
+                        <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                    </a>
+                </div>
+                <div class="portfolio2">
+                    <p class="portfolio-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam leo dolor, egestas nec dolor sed, varius tincidunt metus. Pellentesque habitant 
+                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dolor magna, molestie 
+                        quis turpis sit amet, blandit ullamcorper nulla. Quisque ut ligula interdum, vulputate risus tempor, 
+                        condimentum ante. Duis posuere maximus faucibus. Sed laoreet tempor diam. Interdum et malesuada fames 
+                        ac ante ipsum primis in faucibus. <br><br>
+                </div>
+            </div>
+        </div> <!--photography portfolio, ig link-->
+        <div id="more" class="more-section">
+            <div class="container more-container">
+                <div class="more1">
+                    <h1> Skills, Interests and More </h1>
+                    <p class="more-para"></p>
+                    <a class="scroll-button-wrapper" href="#contact">
+                        <div class="scroll"> Contact me</div>
+                        <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                    </a>
+                </div>
+                <div class="more2">
+                    <p class="more-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam leo dolor, egestas nec dolor sed, varius tincidunt metus. Pellentesque habitant 
+                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dolor magna, molestie 
+                        quis turpis sit amet, blandit ullamcorper nulla. Quisque ut ligula interdum, vulputate risus tempor, 
+                        condimentum ante. Duis posuere maximus faucibus. Sed laoreet tempor diam. Interdum et malesuada fames 
+                        ac ante ipsum primis in faucibus. <br><br>
+                </div>
+            </div>
+        </div> <!--other skills and interests eg. CAPT, diving, judo, -->
+        <div id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact1">
+                    <h1>Contact Me</h1>
+                    <p class="contact-para"></p>
+                    <a class="scroll-button-wrapper" href="#home">
+                        <div class="scroll"> Back to top.</div>
+                        <img class="scroll-icon" src="images/scroll-arrow.svg" > <!--to find legit icon-->
+                    </a>
+                </div>
+                <div class="contact2">
+                    <p class="contact-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam leo dolor, egestas nec dolor sed, varius tincidunt metus. Pellentesque habitant 
+                        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dolor magna, molestie 
+                        quis turpis sit amet, blandit ullamcorper nulla. Quisque ut ligula interdum, vulputate risus tempor, 
+                        condimentum ante. Duis posuere maximus faucibus. Sed laoreet tempor diam. Interdum et malesuada fames 
+                        ac ante ipsum primis in faucibus. <br><br>
+                </div>
+            </div>
+        </div>  <!--email box, linkedin, github?, ig-->
         <div class="footer"></div>
 
         <script src="script.js"></script>
