@@ -38,7 +38,7 @@ p {
     padding: 100px;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     min-width: 90vw;
 }
 
@@ -69,7 +69,7 @@ p {
         background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
     }
     .nav-logo {
-        filter:invert();
+        filter: invert();
       
     }
     .nav-logo:hover {
@@ -84,7 +84,7 @@ p {
     
     .navbar-right {
         height: 50px;
-        width: 100px;
+        width: 130px;
         background-color: rgba(248, 187, 6, 0.87);
         border-radius: 3px;
         color: #01141f;
@@ -99,29 +99,83 @@ p {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .navbar-right:active {
-        opacity: 60%;
+    .navbar-right:hover {
+        
+        cursor:pointer;
     }
-    
-    .navbar-right[aria-expanded="true"] > .menu-button-content {
+    .navbar-right:hover > .menu-button-content a {
         display:block;
     }
-    .navbar-right[aria-expanded="false"] > .menu-button-content {
-        display:none;
-    }
+    
 
     .menu-button-content {
           position:absolute;
-          top: 83px;
-          min-width: 100px;
-          background-color: rgba(248, 187, 6, 0.87);
+          top: 67.5px;
+          margin-left: -40px;
+          perspective: 1000px;
+          z-index: 1000;
+          
+          border-radius: 3px;
 
     }
     .menu-button-content a {
+        display:none;
+        opacity: 0;
+        width: 140px;
         padding: 12px 15px;
         text-decoration: none;
-        display: block;
+        color: #01141f;
+        background-color: rgba(248, 187, 6, 0.87);
     }
+    .menu-button-content a:hover {
+        text-decoration: underline;
+  }
+
+
+    .menu-content1 {
+        transform-origin: top center;
+        animation: rotateX 300ms 60ms ease-in-out forwards;
+    }
+    .menu-content2 {
+        transform-origin: top center;
+        animation: rotateX 300ms 120ms ease-in-out forwards;
+    }
+    .menu-content3 {
+        transform-origin: top center;
+        animation: rotateX 300ms 180ms ease-in-out forwards;
+    }
+    .menu-content4 {
+        transform-origin: top center;
+        animation: rotateX 300ms 240ms ease-in-out forwards;
+    }
+    .menu-content5 {
+        transform-origin: top center;
+        animation: rotateX 300ms 300ms ease-in-out forwards;
+    }
+    .menu-content6 {
+        transform-origin: top center;
+        animation: rotateX 300ms 360ms ease-in-out forwards;
+    }
+    @keyframes rotateX {
+        0% {
+          opacity: 0;
+          transform: rotateX(-90deg);
+        }
+        50% {
+          transform: rotateX(-20deg);
+        }
+        100% {
+          opacity: 1;
+          transform: rotateX(0deg);
+        }
+      }
+
+
+
+
+
+
+
 
     
     .menu-button-container {
