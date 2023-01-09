@@ -35,11 +35,11 @@ p {
 .container {
     
     display: flex;
-    padding: 100px;
+    padding-left: 170px;
+    padding-right: 170px;
     justify-content: space-between;
     align-items: center;
-    min-height: 80vh;
-    min-width: 90vw;
+    height: 100vh;
 }
 
 .card {
@@ -234,13 +234,14 @@ p {
     justify-content: space-between;
     text-decoration-line: none ;
     transition: opacity 0.3s;
+    margin-top: 15rem;
 }
-.scroll-button-wrapper:hover {
+.resume-button:hover, .scroll-button-wrapper:hover {
     opacity: 60%;
     
 
 }
-.scroll-button-wrapper:active {
+.resume-button:active, .scroll-button-wrapper:active {
     background-color: hsla(0, 0%, 100%, 0.5);
 
 }
@@ -255,7 +256,7 @@ p {
     width: 20px;
 }
 
-.scroll-button-wrapper:hover  > .scroll-icon {
+ .scroll-button-wrapper:hover  > .scroll-icon {
     animation: bounce 0.5s forwards infinite alternate;
 }
 @keyframes bounce {
@@ -271,10 +272,23 @@ p {
 .about-container {
     background-color: #272727;
 }
+.resume-button {
+    display:flex;
+    height: 50px;
+    width: 170px;
+    align-items: center;
+    background-color: rgba(248, 187, 6, 0.87);
+    border-radius: 3px;
+    padding-right: 12px;
+    padding-left: 12px;
+    justify-content: space-between;
+    text-decoration-line: none ;
+    transition: opacity 0.3s;
+}
 
-
-
-
+.resume-button:hover  > .scroll-icon {
+    animation: bounce 0.5s forwards infinite alternate;
+}
 
 
 
@@ -410,4 +424,52 @@ p {
 /*contact section*/
 .contact-container {
     background-color: #272727;
+}
+.contact2 {
+    min-width: 55vw;
+    padding-left: 20%;
+}
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-right: 30%;
+}
+
+.contact-box a{
+    display:flex;
+    height: 60px;
+    width: 140px;
+    align-items: center;
+    background-color: rgba(248, 187, 6, 0.87);
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 20px;
+    justify-content: space-between;
+    text-decoration-line: none ;
+    transition: opacity 0.3s;
+}
+.contact-box a p{
+    color: #01141f;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    
+}
+.contact-box a:hover {
+    opacity: 60%;
+    
+
+}
+.contact-box a:active {
+    background-color: hsla(0, 0%, 100%, 0.5);
+
+}
+.scroll-icon {
+    width: 20px;
+}
+
+.contact-box a:hover  > .scroll-icon {
+    animation: bounce 0.5s forwards infinite alternate;
 }
