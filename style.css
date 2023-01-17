@@ -45,7 +45,7 @@ p {
 .card {
     z-index: 100000;
     border-color: #000;
-    display: none;  /* the card doesnt work yet...*/ 
+    display: block;  /* the card doesnt work yet...*/ 
 }
 
 
@@ -293,7 +293,9 @@ p {
 
 
 /*projects section*/
-
+.card {
+    width: 1000px;
+}
 
 
 
